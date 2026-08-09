@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+my_new_env/
+
+# Editor
+.vscode/
+.idea/
