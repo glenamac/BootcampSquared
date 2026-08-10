@@ -2,7 +2,7 @@
 
 This guide gets your cloud environment working **before** the bootcamp so we can spend our time on AI and biomedical computing instead of setup. It walks you through logging into **GW Research Gateway (AWS)**, launching a **Rocky Linux 8 Remote Desktop**, starting **Jupyter**, and pulling the model with **Ollama**.
 
-> **Why AWS and not Pegasus?** Pegasus's GPFS storage is down and won't be fixed before our dates. Research Gateway gives everyone a full Linux desktop today, and every skill we use — Jupyter, PyTorch, Ollama, bash, Python environments — transfers directly. The only thing that doesn't carry over is Slurm, which we don't need for this bootcamp.
+> **Why AWS and not Pegasus?** Pegasus's GPFS storage is unavailable for the bootcamp window. Research Gateway gives everyone a full Linux desktop today, and every skill we use — Jupyter, PyTorch, Ollama, bash, Python environments — transfers directly. The main thing that does not carry over is Slurm, which we do not need for this bootcamp.
 
 **Plan for about 30 minutes.** The instance itself takes ~15 minutes to build, so start early.
 
@@ -19,6 +19,15 @@ By the end you should have all of these done:
 - [ ] Opened and run **`ollama_aws.ipynb`**, including pulling the model
 
 Come to the bootcamp with all five checked.
+
+---
+
+## What's in this repo
+
+- **`README.md`** — the pre-bootcamp setup guide
+- **`ollama_aws.ipynb`** — the main notebook for Research Gateway / AWS
+- **`ollama_colab.ipynb`** — the Colab version of the same exercise
+- **`images/`** — screenshots used in the setup walkthrough
 
 ---
 
@@ -140,7 +149,7 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 ## Getting help
 
 - **RTShelp** — for account, access, and system issues.
-- **Office Hours** — bring anything you couldn't get working.
+- **Office Hours** — bring anything you could not get working before the session.
 
 Please sort out access **before** the bootcamp so we don't spend session time on setup.
 
