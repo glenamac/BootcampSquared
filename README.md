@@ -33,7 +33,7 @@ Come to the bootcamp with all five checked.
 
 ## Before you start
 
-- **Do your first login the day before.** The very first time you sign in, the portal shows a **"requires admin approval"** message. This is normal — but until an admin approves you, you can't launch anything. Logging in early means approval is already granted when you need it.
+- **Your first login.** The very first time you sign in, the portal shows a **"requires admin approval"** message. This is normal — but until an admin approves you, you can't launch anything. Logging in early means approval is already granted when you need it.
 - **Confirm you're on the `AI-ML_BioMed` project.** If you don't see it after signing in, contact the organizers before the session.
 - Use a current browser (Chrome works well). You'll end up with two tabs: the portal and your remote desktop.
 
