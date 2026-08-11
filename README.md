@@ -67,7 +67,7 @@ Go to the **Available Products** tab, click **View all**, scroll down and select
 
 > ⚠️ There are look-alikes in the list — **Rocky Linux 8 EC2** and **Windows Remote Desktop**. Make sure you pick **Rocky Linux 8 Remote Desktop** (as circled below).
 
-![Available Products — Rocky Linux 8 Remote Desktop](images/04-products.png)
+![Available Products — Rocky Linux 8 Remote Desktop](images/04-products-new.png)
 
 ---
 
