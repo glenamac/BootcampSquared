@@ -53,7 +53,7 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## Step 2 — Open the AI_ML_Workshop project
+## Step 2 — Open the AI_ML_Workshop Project
 
 From **My Projects**, open the **AI_ML_Workshop** project card.
 
@@ -61,7 +61,7 @@ From **My Projects**, open the **AI_ML_Workshop** project card.
 
 ---
 
-## Step 3 — Choose the product
+## Step 3 — Selecting the Product
 
 Go to the **Available Products** tab, click **View all**, scroll down and select **Rocky Linux 8 Remote Desktop**.
 
@@ -71,20 +71,23 @@ Go to the **Available Products** tab, click **View all**, scroll down and select
 
 ---
 
-## Step 4 — Configure and launch
+## Step 4 — Configuration and Launch
 
 Give the product a name (letters, numbers, dots, hyphens, and underscores only — no spaces), then scroll down and set:
 
 | Setting | Value |
 |---|---|
 | **Product Name** | Anything memorable, e.g. `MyAWSInstance` |
+| **Study Selection** | Check "AI_ML_Workshop", **this is absolutely required** |
 | **EBSVolumeSize** | **80** (GB) |
 | **InstanceType** | **`t3.2xlarge`** |
 | **Password** | Choose your own — you'll use it to log into the desktop |
 
 Then click **Launch Now**.
 
-![Set storage, instance type, and password](images/05-configure.png)
+![Select the appropriate study for this workshop](images/05-configure-a.png)
+
+![Set storage, instance type, and password](images/05-configure-b.png)
 
 > ⏱ **Expected provisioning time is about 15 minutes.** You can keep working in the portal or step away while it builds.
 >
@@ -94,7 +97,7 @@ Then click **Launch Now**.
 
 ---
 
-## Step 5 — Log into the desktop
+## Step 5 — Logging into the Desktop
 
 When the instance is ready, it opens in a **new browser tab** showing a Rocky Linux lock screen.
 
@@ -123,7 +126,7 @@ A Jupyter notebook will open in a browser **inside the remote desktop**.
 
 ---
 
-## Step 7 — Run the Ollama notebook
+## Step 7 — Run the Ollama Notebook
 
 In the Jupyter file browser, open:
 
@@ -148,7 +151,7 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 
 ---
 
-## Getting help
+## Getting Help
 
 - **RTShelp** — for account, access, and system issues.
 - **Office Hours** — bring anything you could not get working before the session.
@@ -157,13 +160,13 @@ Please sort out access **before** the bootcamp so we don't spend session time on
 
 ---
 
-## Please: stop your instance when you're done
+## Please: stop your instance when you're done!
 
 The `t3.2xlarge` instance bills against the shared **$5,000 AI_ML_Workshop project budget** the whole time it's running. When you finish for the day, **stop your instance** from the portal so it isn't quietly burning the budget.
 
 ---
 
-## Quick reference
+## Quick Reference
 
 ```text
 Portal:     https://rg.arc.gwu.edu/   →  InCommon-Login  →  Sign in with GW
