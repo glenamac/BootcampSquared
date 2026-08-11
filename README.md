@@ -8,7 +8,7 @@ This guide gets your cloud environment working **before** the bootcamp so we can
 
 ---
 
-## What you'll accomplish
+## What You'll Accomplish
 
 By the end you should have all of these done:
 
@@ -22,7 +22,7 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## What's in this repo
+## What's in This Repo
 
 - **`README.md`** — the pre-bootcamp setup guide
 - **`ollama_aws.ipynb`** — the main notebook for Research Gateway / AWS
@@ -31,7 +31,7 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## Before you start
+## Before You Start
 
 - **Your first login.** The very first time you sign in, the portal shows a **"requires admin approval"** message. This is normal — but until an admin approves you, you can't launch anything. Logging in early means approval is already granted when you need it.
 - **Confirm you're on the `AI_ML_Workshop` project.** If you don't see it after signing in, contact the organizers before the session.
