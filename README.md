@@ -110,7 +110,7 @@ When the instance is ready, it opens in a **new browser tab** showing a Rocky Li
 
 ## Step 6 — Jupyter Setup and Startup
 
-Open a **terminal** on the desktop and run these commands one at a time:
+Open a **terminal** on the desktop under "Applications" and run these commands one at a time:
 
 ```bash
 sudo dnf install python3.12 -y
