@@ -57,7 +57,7 @@ Come to the bootcamp with all five checked.
 
 From **My Projects**, open the **AI_ML_Workshop** project card.
 
-![Open the AI_ML_Workshop project](images/03-project.png)
+![Open the AI_ML_Workshop project](images/03-project-new.png)
 
 ---
 
