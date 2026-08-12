@@ -13,7 +13,7 @@ This guide gets your cloud environment working **before** the bootcamp so we can
 By the end you should have all of these done:
 
 - [ ] Signed in to Research Gateway at **rg.arc.gwu.edu**
-- [ ] Launched a **Rocky Linux 8 Remote Desktop** (80 GB storage, `t3.2xlarge`)
+- [ ] Launched a **Rocky Linux 8 Remote Desktop** (80 GB storage, `g5.2xlarge`)
 - [ ] Logged into the desktop and opened a terminal
 - [ ] Started **Jupyter** from a Python virtual environment
 - [ ] Opened and run **`ollama_aws.ipynb`**, including pulling the model
@@ -80,14 +80,14 @@ Give the product a name (letters, numbers, dots, hyphens, and underscores only �
 | **Product Name** | Anything memorable, e.g. `MyAWSInstance` |
 | **Study Selection** | Check "AI_ML_Workshop", **this is absolutely required** |
 | **EBSVolumeSize** | **80** (GB) |
-| **InstanceType** | **`t3.2xlarge`** |
+| **InstanceType** | **`g5.2xlarge`** |
 | **Password** | Choose your own — you'll use it to log into the desktop |
 
 Then click **Launch Now**.
 
 ![Select the appropriate study for this workshop](images/05-configure-a.png)
 
-![Set storage, instance type, and password](images/05-configure-b.png)
+![Set storage, instance type, and password](images/05-configure-b-new.png)
 
 > ⏱ **Expected provisioning time is about 15 minutes.** You can keep working in the portal or step away while it builds.
 >
@@ -113,6 +113,7 @@ When the instance is ready, it opens in a **new browser tab** showing a Rocky Li
 Open a **terminal** on the desktop under "Applications" and run these commands one at a time:
 
 ```bash
+git clone https://github.com/glenamac/BootcampSquared.git
 sudo dnf install python3.12 -y
 python3.12 -m venv my_new_env
 source my_new_env/bin/activate
@@ -131,7 +132,7 @@ A Jupyter notebook will open in a browser **inside the remote desktop**.
 In the Jupyter file browser, open:
 
 ```
-./studies/ProjectStorage/ollama_aws.ipynb
+/BootcampSquared/ollama_aws.ipynb
 ```
 
 Run the notebook top to bottom. **Run the model-pull cell early** — the download takes a while, and running it now means the model is ready before the bootcamp instead of during it. When a later cell gets a response from the model, you're done.
@@ -144,7 +145,7 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 |---|---|
 | **Login fails** | Re-check the InCommon / Sign in with GW steps. If it's your first login, your account may still be waiting on **admin approval**. |
 | **Nothing to launch / no project** | Confirm you're a member of the **AI_ML_Workshop** project and that it shows a budget. Contact the organizers if it's missing. |
-| **Instance won't launch** | Double-check the config: **80 GB** storage and **`t3.2xlarge`**. Make sure the product name has no spaces or special characters. |
+| **Instance won't launch** | Double-check the config: **80 GB** storage and **`g5.2xlarge`**. Make sure the product name has no spaces or special characters. |
 | **Can't find the password box** | Click in the desktop window and **drag upward** to reveal it. |
 | **`jupyter: command not found`** | The virtual environment isn't active. Run `source my_new_env/bin/activate`, then `jupyter notebook` again. |
 | **Package or model missing** | Re-run the `pip install` / model-pull cells with the venv active. |
@@ -162,7 +163,7 @@ Please sort out access **before** the bootcamp so we don't spend session time on
 
 ## Please: stop your instance when you're done!
 
-The `t3.2xlarge` instance bills against the shared **$5,000 AI_ML_Workshop project budget** the whole time it's running. When you finish for the day, **stop your instance** from the portal so it isn't quietly burning the budget.
+The `g5.2xlarge` instance bills against the shared **$5,000 AI_ML_Workshop project budget** the whole time it's running. When you finish for the day, **stop your instance** from the portal so it isn't quietly burning the budget.
 
 ---
 
@@ -172,12 +173,13 @@ The `t3.2xlarge` instance bills against the shared **$5,000 AI_ML_Workshop proje
 Portal:     https://rg.arc.gwu.edu/   →  InCommon-Login  →  Sign in with GW
 Project:    AI_ML_Workshop
 Product:    Rocky Linux 8 Remote Desktop
-Config:     80 GB storage  ·  t3.2xlarge  ·  your own password
-Notebook:   /home/ec2-user/studies/ProjectStorage/ollama_aws.ipynb
+Config:     80 GB storage  ·  g5.2xlarge  ·  your own password
+Notebook:   /BootcampSquared/ollama_aws.ipynb
 ```
 
 ```bash
 # On the desktop, in a terminal:
+git clone https://github.com/glenamac/BootcampSquared.git
 sudo dnf install python3.12 -y
 python3.12 -m venv my_new_env
 source my_new_env/bin/activate
