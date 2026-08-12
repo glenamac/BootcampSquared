@@ -154,8 +154,8 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 
 ## Getting Help
 
-- **RTShelp** — for account, access, and system issues.
-- **Office Hours** — bring anything you could not get working before the session.
+- **[RTShelp](mailto:rtshelp@gwu.edu)** — for account, access, and system issues. Email us with the link in the title.
+- **[Office Hours](https://gwu-edu.zoom.us/j/91295945575)** — bring anything you could not get working before the session. Held at the Zoom link in the title every **Tuesday and Thursday from 12:30pm - 2:30pm Eastern.**
 
 Please sort out access **before** the bootcamp so we don't spend session time on setup.
 
