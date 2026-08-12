@@ -8,7 +8,7 @@ This guide gets your cloud environment working **before** the bootcamp so we can
 
 ---
 
-## What you'll accomplish
+## What You'll Accomplish
 
 By the end you should have all of these done:
 
@@ -22,7 +22,7 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## What's in this repo
+## What's in This Repo
 
 - **`README.md`** — the pre-bootcamp setup guide
 - **`ollama_aws.ipynb`** — the main notebook for Research Gateway / AWS
@@ -31,10 +31,10 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## Before you start
+## Before You Start
 
 - **Your first login.** The very first time you sign in, the portal shows a **"requires admin approval"** message. This is normal — but until an admin approves you, you can't launch anything. Logging in early means approval is already granted when you need it.
-- **Confirm you're on the `AI-ML_BioMed` project.** If you don't see it after signing in, contact the organizers before the session.
+- **Confirm you're on the `AI_ML_Workshop` project.** If you don't see it after signing in, contact the organizers before the session.
 - Use a current browser (Chrome works well). You'll end up with two tabs: the portal and your remote desktop.
 
 ---
@@ -53,46 +53,51 @@ Come to the bootcamp with all five checked.
 
 ---
 
-## Step 2 — Open the AI-ML_BioMed project
+## Step 2 — Open the AI_ML_Workshop Project
 
-From **My Projects**, open the **AI-ML_BioMed** project card.
+From **My Projects**, open the **AI_ML_Workshop** project card.
 
-![Open the AI-ML_BioMed project](images/03-project.png)
-
----
-
-## Step 3 — Choose the product
-
-Go to the **Available Products** tab and select **Rocky Linux 8 Remote Desktop**.
-
-> ⚠️ There are look-alikes in the list — **Rocky Linux 8 EC2** and **Windows Remote Desktop**. Make sure you pick **Rocky Linux 8 Remote Desktop** (circled below).
-
-![Available Products — Rocky Linux 8 Remote Desktop](images/04-products.png)
+![Open the AI_ML_Workshop project](images/03-project-new.png)
 
 ---
 
-## Step 4 — Configure and launch
+## Step 3 — Selecting the Product
+
+Go to the **Available Products** tab, click **View all**, scroll down and select **Rocky Linux 8 Remote Desktop**.
+
+> ⚠️ There are look-alikes in the list — **Rocky Linux 8 EC2** and **Windows Remote Desktop**. Make sure you pick **Rocky Linux 8 Remote Desktop** (as circled below).
+
+![Available Products — Rocky Linux 8 Remote Desktop](images/04-products-new.png)
+
+---
+
+## Step 4 — Configuration and Launch
 
 Give the product a name (letters, numbers, dots, hyphens, and underscores only — no spaces), then scroll down and set:
 
 | Setting | Value |
 |---|---|
 | **Product Name** | Anything memorable, e.g. `MyAWSInstance` |
+| **Study Selection** | Check "AI_ML_Workshop", **this is absolutely required** |
 | **EBSVolumeSize** | **80** (GB) |
 | **InstanceType** | **`t3.2xlarge`** |
 | **Password** | Choose your own — you'll use it to log into the desktop |
 
 Then click **Launch Now**.
 
-![Set storage, instance type, and password](images/05-configure.png)
+![Select the appropriate study for this workshop](images/05-configure-a.png)
+
+![Set storage, instance type, and password](images/05-configure-b.png)
 
 > ⏱ **Expected provisioning time is about 15 minutes.** You can keep working in the portal or step away while it builds.
 >
 > 🔒 **About the password:** you set your own password here. Ignore any pre-filled default shown on the product description — pick something only you know.
+> 
+> ❗ **Please make sure to remember this password**, as there's no way to reset it without simply requesting an entire new instance.
 
 ---
 
-## Step 5 — Log into the desktop
+## Step 5 — Logging into the Desktop
 
 When the instance is ready, it opens in a **new browser tab** showing a Rocky Linux lock screen.
 
@@ -103,9 +108,9 @@ When the instance is ready, it opens in a **new browser tab** showing a Rocky Li
 
 ---
 
-## Step 6 — Start Jupyter
+## Step 6 — Jupyter Setup and Startup
 
-Open a **terminal** on the desktop and run these commands one at a time:
+Open a **terminal** on the desktop under "Applications" and run these commands one at a time:
 
 ```bash
 sudo dnf install python3.12 -y
@@ -121,12 +126,12 @@ A Jupyter notebook will open in a browser **inside the remote desktop**.
 
 ---
 
-## Step 7 — Run the Ollama notebook
+## Step 7 — Run the Ollama Notebook
 
 In the Jupyter file browser, open:
 
 ```
-/home/ec2-user/studies/ProjectStorage/ollama_aws.ipynb
+./studies/ProjectStorage/ollama_aws.ipynb
 ```
 
 Run the notebook top to bottom. **Run the model-pull cell early** — the download takes a while, and running it now means the model is ready before the bootcamp instead of during it. When a later cell gets a response from the model, you're done.
@@ -135,10 +140,10 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 
 ## Troubleshooting
 
-| Problem | Try this |
+| Problem? | Try this! |
 |---|---|
 | **Login fails** | Re-check the InCommon / Sign in with GW steps. If it's your first login, your account may still be waiting on **admin approval**. |
-| **Nothing to launch / no project** | Confirm you're a member of the **AI-ML_BioMed** project and that it shows a budget. Contact the organizers if it's missing. |
+| **Nothing to launch / no project** | Confirm you're a member of the **AI_ML_Workshop** project and that it shows a budget. Contact the organizers if it's missing. |
 | **Instance won't launch** | Double-check the config: **80 GB** storage and **`t3.2xlarge`**. Make sure the product name has no spaces or special characters. |
 | **Can't find the password box** | Click in the desktop window and **drag upward** to reveal it. |
 | **`jupyter: command not found`** | The virtual environment isn't active. Run `source my_new_env/bin/activate`, then `jupyter notebook` again. |
@@ -146,7 +151,7 @@ Run the notebook top to bottom. **Run the model-pull cell early** — the downlo
 
 ---
 
-## Getting help
+## Getting Help
 
 - **RTShelp** — for account, access, and system issues.
 - **Office Hours** — bring anything you could not get working before the session.
@@ -155,17 +160,17 @@ Please sort out access **before** the bootcamp so we don't spend session time on
 
 ---
 
-## Please: stop your instance when you're done
+## Please: stop your instance when you're done!
 
-The `t3.2xlarge` instance bills against the shared **$5,000 AI-ML_BioMed project budget** the whole time it's running. When you finish for the day, **stop your instance** from the portal so it isn't quietly burning the budget.
+The `t3.2xlarge` instance bills against the shared **$5,000 AI_ML_Workshop project budget** the whole time it's running. When you finish for the day, **stop your instance** from the portal so it isn't quietly burning the budget.
 
 ---
 
-## Quick reference
+## Quick Reference
 
 ```text
 Portal:     https://rg.arc.gwu.edu/   →  InCommon-Login  →  Sign in with GW
-Project:    AI-ML_BioMed
+Project:    AI_ML_Workshop
 Product:    Rocky Linux 8 Remote Desktop
 Config:     80 GB storage  ·  t3.2xlarge  ·  your own password
 Notebook:   /home/ec2-user/studies/ProjectStorage/ollama_aws.ipynb
